@@ -1,8 +1,9 @@
 backend:
   name: github
-  repo: https://github.com/saumoinak1/zenos-platform
+  repo: saumoinak1/zenos-platform
   branch: main
   base_url: https://zenos.work
+  auth_endpoint: auth
 
 media_folder: "assets/images" # Jekyll usually keeps images in assets
 public_folder: "/assets/images"
