@@ -14,7 +14,9 @@ export async function onRequest(context) {
   return new Response(`
     <script>
       const res = ${JSON.stringify({ token: result.access_token, provider: "github" })};
-      window.opener.postMessage("authorization:github:success:" + JSON.stringify(res), window.location.origin);
+      console.log(res);
+      window.opener.postMessage("authorization:github:success:" + JSON.stringify(res), "*");
+      console.log("Redirection succcess");
       window.close();
     </script>`, 
     { headers: { "content-type": "text/html" } }
