@@ -1,0 +1,24 @@
+# Site
+name: "Zenos"
+title: "Zenos Platform"
+description: "High-level integration, GenAI architecture, and expert thought."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: ""  # <-- THIS MUST BE EMPTY
+google_analytics: ''
+disqus: ''
+mailchimp-list: ''
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  moinak:
+    name: Moinak Sau
+    display_name: Moinak
+    avatar: 'assets/images/avatar.png'
+    gravatar: ''
+    email: ''
+    web: https://zenos.work
+    twitter: ''
+    description: "Sr Manager playing the role of Delivery Lead and Sr Integration and GenAI architect. Over 20 years of experience in the IT industry."

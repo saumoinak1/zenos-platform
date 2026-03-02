@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: https://github.com/saumoinak1/zenos-platform
+  branch: main
+  base_url: https://zenos.work
+
+media_folder: "assets/images" # Jekyll usually keeps images in assets
+public_folder: "/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Articles"
+    folder: "_posts" # Jekyll requires this folder
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # CRITICAL for Jekyll routing
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
